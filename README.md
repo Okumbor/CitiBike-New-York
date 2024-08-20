@@ -30,6 +30,7 @@ Ensure you have Python installed on your machine along with the following librar
 - Numpy
 - Matplotlib: Used extensively for generating static, interactive, and animated visualizations.
 - Requests
+- Seaborn
 - Kepler.gl for Python: For mapping and visualization tasks.
 
 ### Installation
