@@ -5,6 +5,7 @@ This project analyzes CitiBike usage in New York to identify patterns and provid
 
 ## Features
 
+- **Virtual Enviroment**
 - **Data Integration**: Combines historical trip data with weather data to assess influences on bike usage patterns.
 - **Interactive Dashboard**: Visualizes data through an interactive dashboard that displays usage statistics, popular routes, and station distribution.
 - **Predictive Insights**: Offers predictive insights for station placement and bike availability to optimize resource allocation.
