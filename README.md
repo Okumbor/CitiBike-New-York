@@ -6,7 +6,7 @@ This project leverages Python and Streamlit to analyze CitiBike usage in New Yor
 ## Features
 
 - **Virtual Environment Setup**: Ensures isolated Python environments for reliable dependency management.
-- **Data Integration**: Combines historical trip data from 12 monthly datasets of 2022 from CitiBike with weather data from NOAA, using Python pandas to assess influences on bike usage patterns.
+- **Data Integration**: Combines historical trip data from 12 monthly datasets of 2022 from NOAA with weather data and a dataset from CitiBike, using Python pandas to assess influences on bike usage patterns.
 - **Interactive Dashboard**: Utilizes Streamlit to visualize data interactively, showcasing usage statistics, popular routes, and station distribution in a user-friendly web application.
 - **Predictive Insights**: Employs machine learning models to predict station placement and bike availability, optimizing resource allocation.
 - **Dual-Axis Plotting**: Implements dual-axis time series plotting with Plotly to visualize the relationship between weather conditions and bike usage.
