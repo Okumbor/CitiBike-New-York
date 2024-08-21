@@ -1,40 +1,47 @@
 # CitiBike-New York Analysis Project
 
 ## Project Overview
-This project analyzes CitiBike usage in New York to identify patterns and provide insights into the operational efficiency and customer engagement of the bike-sharing system. The analysis aims to pinpoint high-demand areas, suggest optimal locations for new bike stations, and explore the impact of weather conditions on bike usage.
+This project leverages Python and Streamlit to analyze CitiBike usage in New York City, aiming to enhance operational efficiency and improve customer engagement. By identifying high-demand areas, suggesting optimal locations for new stations, and exploring the impacts of weather conditions on bike usage, this project provides actionable insights to stakeholders.
 
 ## Features
 
-- **Virtual Enviroment**
-- **Data Integration**: Combines historical trip data with weather data to assess influences on bike usage patterns.
-- **Interactive Dashboard**: Visualizes data through an interactive dashboard that displays usage statistics, popular routes, and station distribution.
-- **Predictive Insights**: Offers predictive insights for station placement and bike availability to optimize resource allocation.
-- **Dual-Axis Plotting**: Utilizes dual-axis time series plotting to visualize the relationship between weather conditions (temperature) and bike usage patterns, highlighting how external factors influence customer behavior.
-- **Kepler.gl Visualization**: Incorporates Kepler.gl to map trip data dynamically, allowing for the visualization of popular routes and the analysis of trip frequencies and patterns.
+- **Virtual Environment Setup**: Ensures isolated Python environments for reliable dependency management.
+- **Data Integration**: Combines historical trip data from 12 monthly datasets of 2022 from CitiBike with weather data from NOAA, using Python pandas to assess influences on bike usage patterns.
+- **Interactive Dashboard**: Utilizes Streamlit to visualize data interactively, showcasing usage statistics, popular routes, and station distribution in a user-friendly web application.
+- **Predictive Insights**: Employs machine learning models to predict station placement and bike availability, optimizing resource allocation.
+- **Dual-Axis Plotting**: Implements dual-axis time series plotting with Plotly to visualize the relationship between weather conditions and bike usage.
+- **Kepler.gl Visualization**: Uses Kepler.gl for dynamic mapping, visualizing trip data effectively, and analyzing trip frequencies and patterns.
 
 ## Project Implementation Details
 
-### Kepler.gl Configuration
-- **Map Customization**: Configured Kepler.gl to visualize trip data, adjusting point colors and adding arcs to represent routes effectively.
-- **Filtering Data**: Applied filters to identify and visualize the most common trips, such as those between Hoboken Terminal and Monmouth St, and trips around the South Waterfront Walkway.
-- **Data Insights**: Analyzed the busy zones and the impact of location on trip frequency, contributing to strategic planning for new bike stations.
+### Data Sources
+The data used in this project is sourced from open datasets provided by Citi Bike and NOAA for the year 2022:
+- Citi Bike Data: [Citi Bike Trip Data](https://s3.amazonaws.com/tripdata/index.html)
+- NOAA Weather Data: [NOAA Climate Data Online](https://www.noaa.gov/)
+
+Due to the extensive size of the datasets (12 individual monthly datasets from NOAA and a dataset from Citi Bike), the main DataFrame was too large to be uploaded directly to GitHub. The data integration and manipulation were performed using Python's pandas library to ensure comprehensive analysis and insights.
 
 ### Data Analysis Techniques
-- Combined and cleaned bike usage and weather data to understand how different weather conditions affect bike usage trends.
-- Implemented predictive analytics for forecasting demand and optimizing the distribution of bikes across stations.
+- **Data Preparation**: Combines and cleanses bike usage and weather data to analyze how varying weather conditions affect bike usage trends.
+- **Predictive Analytics**: Utilizes forecasting techniques to predict demand and optimize bike distribution across various stations.
+
+### Kepler.gl Configuration
+- **Map Customization**: Configures Kepler.gl to visualize trip data effectively, using customized point colors and adding arcs to represent frequent routes.
+- **Dynamic Filtering**: Implements interactive filters to focus on the most common trips and analyze busy zones, aiding in strategic planning for new station locations.
 
 ## Getting Started
 
 ### Prerequisites
-Ensure you have Python installed on your machine along with the following libraries:
-- Pandas
-- Numpy
-- Matplotlib: Used extensively for generating static, interactive, and animated visualizations.
-- Requests
-- Seaborn
-- Kepler.gl for Python: For mapping and visualization tasks.
+Ensure your machine has Python installed along with the following libraries:
+- `Pandas`
+- `Numpy`
+- `Matplotlib`: Essential for creating static and interactive visualizations.
+- `Requests`: For handling HTTP requests to fetch data.
+- `Seaborn`: Advanced visualization.
+- `Kepler.gl`: For geospatial data visualization.
+- `Streamlit`: For deploying interactive and live data applications.
 
 ### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/YourUsername/CitiBike-New-York.git
+Clone the repository to get started with the project:
+```bash
+git clone https://github.com/YourUsername/CitiBike-New-York.git
