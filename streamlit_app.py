@@ -33,11 +33,11 @@ page = st.sidebar.selectbox('Select an aspect of the analysis',
     ])
 
 ########################## Import data ###########################################################################################
-path = r"C:\Users\okumb\Downloads\CitiBike-New-York\.venv\Scripts\reduced_data_to_plot_7.csv"
-df = pd.read_csv(path)
+url = 'https://github.com/Okumbor/CitiBike-New-York/blob/main/.venv/Scripts/reduced_data_to_plot_7.csv'
+df = pd.read_csv(url)
 st.dataframe(df)
-path = r"C:\Users\okumb\Downloads\CitiBike-New-York\.venv\Scripts\top20.csv"
-top20 = pd.read_csv(path)
+url = "https://github.com/Okumbor/CitiBike-New-York/blob/main/.venv/Scripts/top20.csv"
+top20 = pd.read_csv(url)
 st.dataframe(top20)
 # ######################################### CREATE PAGES #####################################################################
 
