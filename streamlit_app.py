@@ -59,8 +59,10 @@ if page == "Intro page":
     st.markdown("Use the 'Selector Menu' dropdown menu on the left to navigate through the different aspects of our analysis.")
 
 
-    path = r"C:\Users\okumb\Downloads\CitiBike-New-York\.venv\cITIbIKE_INTRO.jpg"
-    myImage = Image.open(path) #source: https://ny.curbed.com/2020/4/14/21220752/citi-bike-coronavirus-healthcare-workers-commute
+    
+    
+    myImage = Image.open('cITIbIKE_INTRO.jpg') 
+    ##source: https://ny.curbed.com/2020/4/14/21220752/citi-bike-coronavirus-healthcare-workers-commute
     st.image(myImage)
 
     ### Create the dual axis line chart page ###
@@ -190,10 +192,9 @@ elif page == 'Interactive map with aggregated bike trips':
 
     st.write("Interactive map showing aggregated bike trips over New York")
     # correct path to the file
-    path = r"C:\Users\okumb\Downloads\CitiBike-New-York\.venv\Scripts\New_York CitiBike Trips Aggregated.html"
     
     # Read the file and store its contents in a variable
-    with open(path, 'r', encoding='utf-8') as f:
+    with open('New_York CitiBike Trips Aggregated.html', encoding='utf-8') as f:
         html_data = f.read()
    
     ## Show in HTML content in Streamlit
@@ -228,8 +229,8 @@ elif page == 'Interactive map with aggregated bike trips':
 else:
     st.header("Conclusions and Strategic Recommendations")
     # Display an illustrative image for recommendations, ensure the image path is correct or use a placeholder image
-    path = r"C:\Users\okumb\Downloads\CitiBike-New-York\.venv\Bike_final.png"
-    bikes = Image.open(path)  #source: https://www.flickr.com/photos/justtakenpictures/14234828797/
+    #path = r"C:\Users\okumb\Downloads\CitiBike-New-York\.venv\Bike_final.png"
+    bikes = Image.open('Bike_final.png')  #source: https://www.flickr.com/photos/justtakenpictures/14234828797/
     st.image(bikes)
 
     st.markdown("""
