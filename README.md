@@ -29,6 +29,9 @@ Due to the extensive size of the datasets (12 individual monthly datasets from N
 - **Map Customization**: Configures Kepler.gl to visualize trip data effectively, using customized point colors and adding arcs to represent frequent routes.
 - **Dynamic Filtering**: Implements interactive filters to focus on the most common trips and analyze busy zones, aiding in strategic planning for new station locations.
 
+  ### Deployment
+**Streamlit App** The Dashboard was deployed. [View Dashboard on Streamlit](https://citibike-new-york-2.streamlit.app/)
+
 ## Getting Started
 
 ### Prerequisites
