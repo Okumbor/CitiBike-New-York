@@ -54,7 +54,7 @@ if page == "Intro page":
     st.markdown("- **Weather Impact Analysis:** Examines how different weather conditions affect bike usage.")
     st.markdown("- **Trip Patterns Map:** An interactive map showing common routes and aggregated trip data.")
     st.markdown("- **Strategic Recommendations:** Offers actionable advice based on our findings to improve service availability.")
-    st.markdown("Use the 'Selector Menu' dropdown menu on the left to navigate through the different aspects of our analysis.")
+    st.markdown("Use the 'Selector Menu' dropdown menu on the left to navigate through the different aspects of the analysis.")
 
 
     

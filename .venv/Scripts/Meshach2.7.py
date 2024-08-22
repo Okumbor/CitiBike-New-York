@@ -54,8 +54,8 @@ if page == "Intro page":
     st.markdown("- **Bike Station:** Visualizes the most popular stations to identify high-demand areas.")
     st.markdown("- **Weather Impact Analysis:** Examines how different weather conditions affect bike usage.")
     st.markdown("- **Trip Patterns Map:** An interactive map showing common routes and aggregated trip data.")
-    st.markdown("- **Strategic Recommendations:** Offers actionable advice based on our findings to improve service availability.")
-    st.markdown("Use the 'Selector Menu' dropdown menu on the left to navigate through the different aspects of our analysis.")
+    st.markdown("- **Strategic Recommendations:** Offers actionable advice based on the findings to improve service availability.")
+    st.markdown("Use the 'Selector Menu' dropdown menu on the left to navigate through the different aspects of the analysis.")
 
 
     path = r"C:\Users\okumb\Downloads\CitiBike-New-York\.venv\cITIbIKE_INTRO.jpg"
@@ -233,14 +233,14 @@ else:
 
     st.markdown("""
     ### Key Insights and Future Directions:
-    Our comprehensive analysis has provided valuable insights into the operational dynamics and challenges faced by Citi Bike in New York City. Here are our strategic recommendations based on the data analyzed:
+    The comprehensive analysis has provided valuable insights into the operational dynamics and challenges faced by Citi Bike in New York City. Here are the strategic recommendations based on the data analyzed:
 
     - **Enhance Station Capacity at High-Demand Locations**: 
         The data clearly shows that stations like 'Grove St PATH' and 'South Waterfront Walkway' experience very high traffic. 
         Increasing the number of docks and bikes available at these high-demand stations could alleviate some of the availability issues.
 
     - **Seasonal Adjustments in Bike Allocation**:
-        Our analysis of bike usage against temperature trends suggests a pronounced seasonal variation in demand. 
+        The analysis of bike usage against temperature trends suggests a pronounced seasonal variation in demand. 
         We recommend increasing bike availability during warmer months and reducing it in colder months to optimize resource utilization and maintenance costs.
 
     - **Infrastructure Improvements**:
