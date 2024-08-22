@@ -35,10 +35,8 @@ page = st.sidebar.selectbox('Select an aspect of the analysis',
 ########################## Import data ###########################################################################################
 #url = 'https://github.com/Okumbor/CitiBike-New-York/blob/main/.venv/Scripts/reduced_data_to_plot_7.csv'
 df = pd.read_csv('reduced_data_to_plot_7.csv')
-st.dataframe(df)
 #url = "https://github.com/Okumbor/CitiBike-New-York/blob/main/.venv/Scripts/top20.csv"
 top20 = pd.read_csv('top20.csv')
-st.dataframe(top20)
 # ######################################### CREATE PAGES #####################################################################
 
 ### Intro page
@@ -194,7 +192,7 @@ elif page == 'Interactive map with aggregated bike trips':
     # correct path to the file
     
     # Read the file and store its contents in a variable
-    with open('New_York CitiBike Trips Aggregated.html', encoding='utf-8') as f:
+    with open('New_York_CitiBikeTrips_Aggregated.html', encoding='utf-8') as f:
         html_data = f.read()
    
     ## Show in HTML content in Streamlit
